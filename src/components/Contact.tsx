@@ -120,8 +120,9 @@ const Contact = () => {
                 Drop me a message and let's discuss how we can work together to bring your ideas to life.
               </p>
               <form action="https://send.pageclip.co/R0uQFRDK2qcHpx1GSB8aGUNvPw4eRwoV/Contact-Form" className="pageclip-form flex flex-col gap-4 w-full" method="post">
-                <input type="email" name="email" value="roscoe@example.com" className="w-full bg-transparent border border-primary/20 rounded-xl p-4 h-12 text-white/50" />
-                <input type="text" name="subject" value="A contact subject" className="w-full bg-transparent border border-primary/20 rounded-xl p-4 h-12 text-white/50" />
+                <input type="email" name="email" placeholder="email@example.com" className="w-full bg-transparent border border-primary/20 rounded-xl p-4 h-12 text-white/50" />
+                <input type="text" name="subject" placeholder="Subject" className="w-full bg-transparent border border-primary/20 rounded-xl p-4 h-12 text-white/50" />
+                <textarea name="message" placeholder="Your message" className="w-full bg-transparent border border-primary/20 rounded-xl p-4 h-24 resize-none text-white/50"></textarea>
                 <button type="submit" className="bg-button inline-flex items-center justify-center gap-2 whitespace-nowrap font-display tracking-wide transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold shadow-xl shadow-primary/30 hover:shadow-primary/50 hover:scale-105 hover:-translate-y-0.5 h-14 rounded-xl px-10 text-base w-full">
                   <Mail className="w-5 h-5" /> Send Message
                 </button>
